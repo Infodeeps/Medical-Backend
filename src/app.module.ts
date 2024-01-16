@@ -41,6 +41,7 @@ import { ExceldownloadModule } from './module/Exceldownload.module';
                 username: configService.get<string>('DATABASE_USER_NAME'),
                 password: configService.get<string>('DATABASE_PASSWORD'),
                 database: configService.get<string>('DATABASE_NAME'),
+                dataurl: configService.get<string>('DATABASE_URL'),
                 autoLoadEntities: true,
                 entities: ['../dist/entity/*.entity.{ts,js}'],
                 subscribers: ['../dist/entity/*.entity.{ts,js}'],
